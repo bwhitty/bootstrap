@@ -367,6 +367,13 @@
     overflow: visible !important;
   }
 
+  // Do not compensate for no navbar 'brand' above breakpoint
+  .nav-collapse {
+    .navbar-toggle + & {
+      margin-top: 0;
+    }
+  }
+  
 }
 
 
